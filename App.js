@@ -26,7 +26,7 @@ import {
   ReloadInstructions
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+export const FibApp: () => React$Node = () => {
   const [input, setInput] = useState('');
   const [value, setValue] = useState('');
 
@@ -112,5 +112,3 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 });
-
-export default App;
