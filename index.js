@@ -2,8 +2,4 @@
  * @format
  */
 
-import {AppRegistry} from 'react-native';
-import {FibApp} from './App';
-import {name as appName} from './app.json';
-
-AppRegistry.registerComponent(appName, () => FibApp);
+export { FibApp } from "./src/screen";
