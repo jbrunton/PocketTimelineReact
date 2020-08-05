@@ -26,23 +26,25 @@ import {
   ReloadInstructions
 } from 'react-native/Libraries/NewAppScreen';
 
+function fib(n: number): number {
+  let a = 1, b = 0;
+  while (n > 0){
+    const temp = a;
+    a = a + b;
+    b = temp;
+    n--;
+  }
+  return b
+}
+
 export const FibApp: () => React$Node = () => {
   const [input, setInput] = useState('');
   const [value, setValue] = useState('');
 
-  function updateFibValue(input) {
+  function updateFibValue(input): void {
     setInput(input)
     let n = Number(input)
-    
-    let a = 1, b = 0;
-    while (n > 0){
-      const temp = a;
-      a = a + b;
-      b = temp;
-      n--;
-    }
-
-    setValue(b)
+    setValue(fib(n))
   }
 
   return (
