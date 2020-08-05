@@ -24,6 +24,6 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { FibApp } from 'TestReactComponentJS/App'
+import { FibApp } from 'TestReactComponentJS'
 
 export default FibApp;

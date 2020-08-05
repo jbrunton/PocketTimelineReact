@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "TestReactComponentJS": "github:jbrunton/TestReactComponentJS",
+    "TestReactComponentJS": "github:jbrunton/TestReactComponentJS#move-example",
     "react": "16.13.1",
     "react-native": "0.63.2"
   },
