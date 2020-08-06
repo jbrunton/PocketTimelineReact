@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 
 import React from 'react';
 import { Button } from 'react-native';
-import { TimelineScreen } from 'TestReactComponentJS'
+import { TimelineScreen } from 'PocketTimelineReact'
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
