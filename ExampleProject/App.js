@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 
 import React from 'react';
 import { Button } from 'react-native';
-import { FibApp } from 'TestReactComponentJS'
+import { TimelineScreen } from 'TestReactComponentJS'
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -12,9 +12,9 @@ const Stack = createStackNavigator();
 const HomeScreen = ({ navigation }) => {
   return (
     <Button
-      title="Launch Fib Calculator"
+      title="Show Timeline"
       onPress={() =>
-        navigation.navigate('Calculator')
+        navigation.navigate('TimelineScreen', { timelineId: "1" })
       }
     />
   );
@@ -29,7 +29,7 @@ export default App = () => {
           component={HomeScreen}
           options={{ title: 'Welcome' }}
         />
-        <Stack.Screen name="Calculator" component={FibApp} />
+        <Stack.Screen name="TimelineScreen" component={TimelineScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
