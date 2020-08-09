@@ -25,7 +25,7 @@ export const TimelineScreen = ({ route, navigation }) => {
       keyExtractor={({ id }, index) => id.toString()}
       renderItem={({ item }) => (
         <View style={styles.sectionContainer}>
-          <Text style={styles.sectionTitle}>{item.title}</Text>
+          <Text onPress={() => navigation.navigate('Home', { event: item })} style={styles.sectionTitle}>{item.title}</Text>
           <Text style={styles.sectionDescription}>
             {item.date}
           </Text>

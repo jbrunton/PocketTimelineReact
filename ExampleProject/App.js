@@ -9,7 +9,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = ({ navigation, route }) => {
+  React.useEffect(() => {
+    if (route.params?.event) {
+      console.log('Event clicked: ' + JSON.stringify(route.params?.event))
+    }
+  }, [route.params?.event]);
+
   return (
     <Button
       title="Show Timeline"
